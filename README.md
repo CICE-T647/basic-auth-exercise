@@ -13,7 +13,7 @@ Tendremos que crear una ruta  `/signup` para que nuestros usuarios puedan regist
 - **Username**: Tendrá que ser único y requerido.  
 - **Password**: Deberá ser encriptada usando bcrypt / bcryptjs (dependiendo de tu sistema operativo). Tendrá que ser requerida.
 - **name**: Nombre requerido del usuario. 
-- **role**: deberá tener 2 opciones: "USER_ROLE" y "ADMIN_ROLE". Por defecto será USER_ROLE, pero, si se especifica, podrá ser ADMIN_ROLE.
+- **role**: deberá tener 2 opciones: `"USER_ROLE"` y `"ADMIN_ROLE"`. Por defecto será USER_ROLE, pero, si se especifica, podrá ser ADMIN_ROLE.
 
 Para completar esta Iteración, deberás crear el modelo con mongoose. 
 

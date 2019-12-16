@@ -37,7 +37,7 @@ Crea un endpoint `/logout`que permite ejecutar esta funcionalidad.
 
 Crea dos rutas adicionales que necesiten de una sesión activa para poder acceder a ellos. 
 
-    - El primer endpoint `/user`será accesible por todos los usuarios, independientemente de su role. 
+    - El primer endpoint `/user`será accesible por todos los usuarios, independientemente de su role, siempre y cuando esté registrado y loggeado. 
     - El segundo enpoint `/admin`solo será accesible por aquellos con role: __ADMIN_ROLE__
 
 

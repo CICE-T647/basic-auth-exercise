@@ -46,6 +46,6 @@ Crea dos rutas adicionales que necesiten de una sesión activa para poder accede
 
 Crea una validación que establezca que la contraseña debe tener ciertos requisitos. 
 
-Puedes usar la librería de npm zxcvbn: https://www.npmjs.com/package/zxcvbn
+Puedes usar la librería de npm `zxcvbn`: https://www.npmjs.com/package/zxcvbn
 
 

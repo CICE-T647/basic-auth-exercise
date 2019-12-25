@@ -36,8 +36,6 @@ const checkHttpParams = params => {
     // Check passwd
     if (zxcvbn(password).score < 2)
         throw `Your password must contain at least 8 characters (at least one uppercase, one number and one special character)`;
-    // if (password.length < 3)
-    //     throw `Password must comply with strong password rules`;
 };
 
 module.exports = { checkHttpParams, checkHttpLoginParams };

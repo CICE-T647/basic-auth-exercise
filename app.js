@@ -1,6 +1,9 @@
 const express = require("express");
 const bp = require("body-parser");
 const mongoose = require("mongoose");
+const session = require("express-session");
+const MongoStore = require("connect-mongo")(session);
+
 require("dotenv").config();
 
 const DB_PORT = process.env.MONGO_PORT;
@@ -23,6 +26,18 @@ mongoose
 
 const PORT = process.env.SERVER_PORT;
 const app = express();
+
+app.use(
+    session({
+        secret: "basic-auth",
+        resave: true,
+        saveUninitialized: true,
+        cookie: { secure: false },
+        store: new MongoStore({
+            mongooseConnection: mongoose.connection
+        })
+    })
+);
 
 app.use(bp.urlencoded({ extended: true }));
 app.use(bp.json());
